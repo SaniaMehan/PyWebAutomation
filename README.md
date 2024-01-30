@@ -31,3 +31,6 @@
 - pip install pytest-xdist 
 - pip install mysql-connector-python
 - pip install pytest-reportportal
+
+for parallel execution: pytest -n auto tests/vwoLoginTests/pom/test_*
+only smoke test execution: pytest -n auto -k "smoke" tests/vwoLoginTests/pom/test_*
